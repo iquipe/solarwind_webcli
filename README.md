@@ -1,7 +1,3 @@
-Of course. Here is a complete `README.md` file for the WebCLI project, including a detailed user command guideline.
-
------
-
 # WebCLI - A Browser-Based PHP & Database Terminal
 
 ### Introduction

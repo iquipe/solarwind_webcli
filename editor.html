@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editing File</title>
+    <style>
+        /* Basic reset and layout styles */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            font-family: sans-serif; 
+            overflow: hidden; /* Prevent scrollbars on the body */
+        }
+
+        /* Main container uses flexbox to structure the editor */
+        .editor-container { 
+            display: flex; 
+            flex-direction: column; 
+            height: 100%; 
+            background-color: #1a1a1a; 
+        }
+
+        /* Header and footer styling */
+        .editor-header, .editor-footer { 
+            padding: 10px; 
+            background-color: #222; 
+            color: #ccc; 
+            flex-shrink: 0; /* Prevent header/footer from shrinking */
+        }
+
+        .editor-header { 
+            border-bottom: 1px solid #333; 
+            font-weight: bold; 
+        }
+
+        #editing-filename { 
+            color: #7fdbff; 
+        }
+
+        /* Textarea fills all available space */
+        #editor-textarea { 
+            flex-grow: 1; 
+            background-color: #0d0d0d; 
+            color: #f0f0f0; 
+            border: none; 
+            outline: none; 
+            padding: 15px; 
+            font-family: 'Courier New', Courier, monospace; 
+            font-size: 16px; 
+            resize: none; 
+        }
+
+        /* Footer button styling */
+        .editor-footer { 
+            border-top: 1px solid #333; 
+            text-align: right; 
+        }
+
+        .editor-footer button { 
+            background-color: #333; 
+            color: #fff; 
+            border: 1px solid #555; 
+            padding: 8px 15px; 
+            cursor: pointer; 
+            margin-left: 10px; 
+        }
+
+        .editor-footer button:hover { 
+            background-color: #00ff41; 
+            color: #000; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="editor-container">
+        <div class="editor-header">
+            Editing: <span id="editing-filename"></span>
+        </div>
+        <textarea id="editor-textarea" spellcheck="false"></textarea>
+        <div class="editor-footer">
+            <button id="editor-save-btn">Save & Close (Ctrl+S)</button>
+            <button id="editor-cancel-btn">Cancel (Esc)</button>
+        </div>
+    </div>
+
+    <script src="editor.js"></script>
+</body>
+</html>

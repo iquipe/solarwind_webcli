@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web CLI - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-screen">
+        <div id="login-output"></div>
+        <div class="command-line">
+            <span class="prompt">$&gt;</span>
+            <input type="text" id="login-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+        </div>
+    </div>
+
+    <div id="terminal" class="hidden">
+        <div id="output"></div>
+        <div class="command-line">
+            <span class="prompt">$&gt;</span>
+            <input type="text" id="input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2025 iQuipe Digital | Licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL 3 License</a>.</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
